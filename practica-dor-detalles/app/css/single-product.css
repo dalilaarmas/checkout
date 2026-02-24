@@ -1,0 +1,146 @@
+/* Imagen principal */
+.imagen-articulo img {
+  width: 250px;
+}
+
+/* Miniaturas */
+.galeria-item img {
+  width: 170px;
+}
+
+/* Precios */
+.precio-articulo {
+    text-decoration: line-through;
+    color: var(--color-precio);
+}
+
+.precio-articulo-rebajado {
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--color-precio-oferta);
+}
+
+/* Texto */
+.texto-detalles {
+    text-align: left;
+    padding: 5px;
+}
+
+/* Botones generales */
+.boton {
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 12px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Botón principal “Comprar” */
+.boton-comprar {
+    background-color: var(--color-boton);
+    color: var(--color-texto-claro);
+}
+
+/* Botón secundario “Añadir al carrito” */
+.boton-secundario {
+    background-color: var(--color-boton-secundario);
+    color: var(--color-texto-claro);
+}
+
+/* Móvil: 2 columnas por defecto */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    max-width: 260px;
+    margin: 10px auto 0;
+    justify-items: center;
+}
+
+.galeria-item img {
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+    display: block;
+}
+
+/* >= 480px: 3 columnas */
+@media (min-width: 480px) {
+    .galeria {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: 340px;
+    }
+}
+
+/* >= 800px: 4 columnas */
+@media (min-width: 800px) {
+     .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        max-width: 100%;
+    }
+}
+
+/* >= 1024px: Diseño escritorio */
+@media (min-width: 1024px) {
+
+    .articulo {
+        max-width: 1200px;
+        margin: 5px auto;
+        display: grid;
+        grid-template-columns: 100px 360px 1fr;
+        gap: 20px;
+        grid-template-areas:
+            "galeria imagen texto";
+        align-items: center;
+        text-align: left;
+    }
+
+    .galeria {
+        grid-area: galeria;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 120px;
+        margin: 0;
+    }
+
+    .galeria-item img {
+        width: 100%;
+        max-width: 110px;
+    }
+
+    .imagen-articulo {
+        grid-area: imagen;
+    }
+
+    .imagen-articulo img {
+        max-width: 430px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .contenido-articulo {
+        grid-area: texto;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+
+    .contenido-articulo h1 {
+        text-align: left;
+    }
+
+    .texto-detalles {
+        text-align: left;
+    }
+
+    .form-buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .boton-secundario {
+        width: 160px;
+    }
+}

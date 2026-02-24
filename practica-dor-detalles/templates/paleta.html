@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Guía de Paletas de Colores</title>
+
+<style>
+    body {
+        background: #f0f2f5;
+        font-family: "Segoe UI", Arial, sans-serif;
+        padding: 40px;
+        color: #333;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 50px;
+        color: #222;
+    }
+
+    .paleta-card {
+        background: white;
+        border-radius: 14px;
+        padding: 25px;
+        margin-bottom: 45px;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+    }
+
+    h2 {
+        margin-top: 0;
+        color: #111;
+        border-left: 6px solid #3B82F6;
+        padding-left: 12px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    th {
+        background: #e8e8e8;
+        padding: 10px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+
+    td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .muestra {
+        width: 55px;
+        height: 30px;
+        border-radius: 6px;
+        border: 1px solid #444;
+    }
+
+    .grupo-muestras {
+        display: flex;
+        gap: 15px;
+        margin-top: 18px;
+        margin-bottom: 10px;
+    }
+
+    .cuadro {
+        width: 70px;
+        height: 70px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+        margin-top: 25px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+
+</style>
+</head>
+
+<body>
+
+<h1>Guía Comparativa de Paletas de Colores</h1>
+
+<!-- ===================================================== -->
+<!-- PALETA 1 - MONOCROMÁTICA -->
+<!-- ===================================================== -->
+<div class="paleta-card">
+    <h2>Paleta 1 — Monocromática (Azules)</h2>
+
+    <div class="subtitulo">Vista general</div>
+    <div class="grupo-muestras">
+        <div class="cuadro" style="background:#3B82F6;"></div>
+        <div class="cuadro" style="background:#93C5FD;"></div>
+        <div class="cuadro" style="background:#1D4ED8;"></div>
+        <div class="cuadro" style="background:#0F172A;"></div>
+        <div class="cuadro" style="background:#E2E8F0;"></div>
+    </div>
+
+    <table>
+        <tr><th>Variable</th><th>Rol</th><th>Hex</th><th>Muestra</th></tr>
+
+        <tr><td>--color-header</td><td>Header</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-footer</td><td>Footer</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-titulo</td><td>Títulos</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-navegacion</td><td>Navegación</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+
+        <tr><td>--color-enlace</td><td>Enlaces</td><td>#93C5FD</td><td><div class="muestra" style="background:#93C5FD;"></div></td></tr>
+        <tr><td>--color-enlace-hover</td><td>Enlace hover</td><td>#1D4ED8</td><td><div class="muestra" style="background:#1D4ED8;"></div></td></tr>
+
+        <tr><td>--color-precio</td><td>Precio normal</td><td>#93C5FD</td><td><div class="muestra" style="background:#93C5FD;"></div></td></tr>
+        <tr><td>--color-precio-oferta</td><td>Precio oferta</td><td>#1D4ED8</td><td><div class="muestra" style="background:#1D4ED8;"></div></td></tr>
+
+        <tr><td>--color-boton</td><td>Botón</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-boton-hover</td><td>Botón hover</td><td>#1D4ED8</td><td><div class="muestra" style="background:#1D4ED8;"></div></td></tr>
+        <tr><td>--color-boton-secundario</td><td>Botón secundario</td><td>#93C5FD</td><td><div class="muestra" style="background:#93C5FD;"></div></td></tr>
+
+        <tr><td>--color-borde-articulo</td><td>Borde artículo</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-borde-articulo-hover</td><td>Borde hover</td><td>#1D4ED8</td><td><div class="muestra" style="background:#1D4ED8;"></div></td></tr>
+
+        <tr><td>--color-fondo</td><td>Fondo</td><td>#0F172A</td><td><div class="muestra" style="background:#0F172A;"></div></td></tr>
+        <tr><td>--color-texto</td><td>Texto</td><td>#E2E8F0</td><td><div class="muestra" style="background:#E2E8F0;"></div></td></tr>
+        <tr><td>--color-texto-claro</td><td>Texto claro</td><td>#ffffff</td><td><div class="muestra" style="background:#ffffff;"></div></td></tr>
+        <tr><td>--color-sesion</td><td>Texto login</td><td>#E2E8F0</td><td><div class="muestra" style="background:#E2E8F0;"></div></td></tr>
+
+    </table>
+</div>
+
+<!-- ===================================================== -->
+<!-- PALETA 2 - COMPLEMENTARIA -->
+<!-- ===================================================== -->
+<div class="paleta-card">
+    <h2>Paleta 2 — Complementaria (Azul + Naranja)</h2>
+
+    <div class="subtitulo">Vista general</div>
+    <div class="grupo-muestras">
+        <div class="cuadro" style="background:#3B82F6;"></div>
+        <div class="cuadro" style="background:#F59E0B;"></div>
+        <div class="cuadro" style="background:#F97316;"></div>
+        <div class="cuadro" style="background:#0F172A;"></div>
+        <div class="cuadro" style="background:#E2E8F0;"></div>
+    </div>
+
+    <table>
+        <tr><th>Variable</th><th>Rol</th><th>Hex</th><th>Muestra</th></tr>
+
+        <tr><td>--color-header</td><td>Header</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-footer</td><td>Footer</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-titulo</td><td>Títulos</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-navegacion</td><td>Navegación</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+
+        <tr><td>--color-enlace</td><td>Enlaces</td><td>#F59E0B</td><td><div class="muestra" style="background:#F59E0B;"></div></td></tr>
+        <tr><td>--color-enlace-hover</td><td>Hover</td><td>#F97316</td><td><div class="muestra" style="background:#F97316;"></div></td></tr>
+
+        <tr><td>--color-precio</td><td>Precio</td><td>#F59E0B</td><td><div class="muestra" style="background:#F59E0B;"></div></td></tr>
+        <tr><td>--color-precio-oferta</td><td>Oferta</td><td>#F97316</td><td><div class="muestra" style="background:#F97316;"></div></td></tr>
+
+        <tr><td>--color-boton</td><td>Botón</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-boton-hover</td><td>Hover botón</td><td>#F97316</td><td><div class="muestra" style="background:#F97316;"></div></td></tr>
+        <tr><td>--color-boton-secundario</td><td>Secundario</td><td>#F59E0B</td><td><div class="muestra" style="background:#F59E0B;"></div></td></tr>
+
+        <tr><td>--color-borde-articulo</td><td>Borde artículo</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-borde-articulo-hover</td><td>Hover borde</td><td>#F97316</td><td><div class="muestra" style="background:#F97316;"></div></td></tr>
+
+        <tr><td>--color-fondo</td><td>Fondo</td><td>#0F172A</td><td><div class="muestra" style="background:#0F172A;"></div></td></tr>
+        <tr><td>--color-texto</td><td>Texto</td><td>#E2E8F0</td><td><div class="muestra" style="background:#E2E8F0;"></div></td></tr>
+        <tr><td>--color-texto-claro</td><td>Texto claro</td><td>#ffffff</td><td><div class="muestra" style="background:#ffffff;"></div></td></tr>
+        <tr><td>--color-sesion</td><td>Texto login</td><td>#E2E8F0</td><td><div class="muestra" style="background:#E2E8F0;"></div></td></tr>
+
+    </table>
+</div>
+
+<!-- ===================================================== -->
+<!-- PALETA 3 - ANÁLOGA -->
+<!-- ===================================================== -->
+<div class="paleta-card">
+    <h2>Paleta 3 — Análoga (Turquesa + Morado)</h2>
+
+    <div class="subtitulo">Vista general</div>
+    <div class="grupo-muestras">
+        <div class="cuadro" style="background:#14B8A6;"></div>
+        <div class="cuadro" style="background:#8B5CF6;"></div>
+        <div class="cuadro" style="background:#3B82F6;"></div>
+        <div class="cuadro" style="background:#0F172A;"></div>
+        <div class="cuadro" style="background:#E2E8F0;"></div>
+    </div>
+
+    <table>
+        <tr><th>Variable</th><th>Rol</th><th>Hex</th><th>Muestra</th></tr>
+
+        <tr><td>--color-header</td><td>Header</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-footer</td><td>Footer</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-titulo</td><td>Títulos</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-navegacion</td><td>Navegación</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+
+        <tr><td>--color-enlace</td><td>Enlaces</td><td>#14B8A6</td><td><div class="muestra" style="background:#14B8A6;"></div></td></tr>
+        <tr><td>--color-enlace-hover</td><td>Hover</td><td>#8B5CF6</td><td><div class="muestra" style="background:#8B5CF6;"></div></td></tr>
+
+        <tr><td>--color-precio</td><td>Precio</td><td>#14B8A6</td><td><div class="muestra" style="background:#14B8A6;"></div></td></tr>
+        <tr><td>--color-precio-oferta</td><td>Oferta</td><td>#8B5CF6</td><td><div class="muestra" style="background:#8B5CF6;"></div></td></tr>
+
+        <tr><td>--color-boton</td><td>Botón</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-boton-hover</td><td>Hover botón</td><td>#8B5CF6</td><td><div class="muestra" style="background:#8B5CF6;"></div></td></tr>
+        <tr><td>--color-boton-secundario</td><td>Secundario</td><td>#14B8A6</td><td><div class="muestra" style="background:#14B8A6;"></div></td></tr>
+
+        <tr><td>--color-borde-articulo</td><td>Borde artículo</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-borde-articulo-hover</td><td>Borde hover</td><td>#8B5CF6</td><td><div class="muestra" style="background:#8B5CF6;"></div></td></tr>
+
+        <tr><td>--color-fondo</td><td>Fondo</td><td>#0F172A</td><td><div class="muestra" style="background:#0F172A;"></div></td></tr>
+        <tr><td>--color-texto</td><td>Texto</td><td>#E2E8F0</td><td><div class="muestra" style="background:#E2E8F0;"></div></td></tr>
+        <tr><td>--color-texto-claro</td><td>Texto claro</td><td>#ffffff</td><td><div class="muestra" style="background:#ffffff;"></div></td></tr>
+        <tr><td>--color-sesion</td><td>Texto login</td><td>#E2E8F0</td><td><div class="muestra" style="background:#E2E8F0;"></div></td></tr>
+
+    </table>
+</div>
+
+<!-- ===================================================== -->
+<!-- PALETA 4 - TRIÁDICA -->
+<!-- ===================================================== -->
+<div class="paleta-card">
+    <h2>Paleta 4 — Triádica (Verde – Rosa – Azul)</h2>
+
+    <div class="subtitulo">Vista general</div>
+    <div class="grupo-muestras">
+        <div class="cuadro" style="background:#84CC16;"></div>
+        <div class="cuadro" style="background:#BE123C;"></div>
+        <div class="cuadro" style="background:#3B82F6;"></div>
+        <div class="cuadro" style="background:#0F172A;"></div>
+        <div class="cuadro" style="background:#E2E8F0;"></div>
+    </div>
+
+    <table>
+        <tr><th>Variable</th><th>Rol</th><th>Hex</th><th>Muestra</th></tr>
+
+        <tr><td>--color-header</td><td>Header</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-footer</td><td>Footer</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-titulo</td><td>Títulos</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-navegacion</td><td>Navegación</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+
+        <tr><td>--color-enlace</td><td>Enlaces</td><td>#84CC16</td><td><div class="muestra" style="background:#84CC16;"></div></td></tr>
+        <tr><td>--color-enlace-hover</td><td>Hover enlace</td><td>#BE123C</td><td><div class="muestra" style="background:#BE123C;"></div></td></tr>
+
+        <tr><td>--color-precio</td><td>Precio</td><td>#84CC16</td><td><div class="muestra" style="background:#84CC16;"></div></td></tr>
+        <tr><td>--color-precio-oferta</td><td>Oferta</td><td>#BE123C</td><td><div class="muestra" style="background:#BE123C;"></div></td></tr>
+
+        <tr><td>--color-boton</td><td>Botón</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-boton-hover</td><td>Hover botón</td><td>#BE123C</td><td><div class="muestra" style="background:#BE123C;"></div></td></tr>
+        <tr><td>--color-boton-secundario</td><td>Botón secundario</td><td>#84CC16</td><td><div class="muestra" style="background:#84CC16;"></div></td></tr>
+
+        <tr><td>--color-borde-articulo</td><td>Borde artículo</td><td>#3B82F6</td><td><div class="muestra" style="background:#3B82F6;"></div></td></tr>
+        <tr><td>--color-borde-articulo-hover</td><td>Borde hover</td><td>#BE123C</td><td><div class="muestra" style="background:#BE123C;"></div></td></tr>
+
+        <tr><td>--color-fondo</td><td>Fondo</td><td>#0F172A</td><td><div class="muestra" style="background:#0F172A;"></div></td></tr>
+        <tr><td>--color-texto</td><td>Texto</td><td>#E2E8F0</td><td><div class="muestra" style="background:#E2E8F0;"></div></td></tr>
+        <tr><td>--color-texto-claro</td><td>Texto claro</td><td>#ffffff</td><td><div class="muestra" style="background:#ffffff;"></div></td></tr>
+        <tr><td>--color-sesion</td><td>Texto login</td><td>#E2E8F0</td><td><div class="muestra" style="background:#E2E8F0;"></div></td></tr>
+
+    </table>
+</div>
+
+</body>
+</html>

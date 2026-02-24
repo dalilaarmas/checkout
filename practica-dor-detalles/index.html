@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="app/css/style.css" />
+    <link rel="stylesheet" href="app/css/catalogo.css" />
+</head>
+
+<body class="catalogo-page fondo letra-principal">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="app/img/main-logo.png" />
+
+            <div class="buscar">
+                <input type="submit" value="Buscar" />
+                <input class="busqueda" type="search" placeholder="Buscar en la web" />
+            </div>
+
+            <a href="" class="carrito">
+                <img src="app/img/logo-carrito.png" />
+            </a>
+
+            <a href="" class="sesion">Iniciar sesión</a>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav class="barra_navegacion">
+        <a href="">Inicio</a>
+        <a href="">Catálogo</a>
+        <a href="">Tiendas</a>
+        <a href="">Ayuda</a>
+    </nav>
+
+    <!-- GRID PRINCIPAL -->
+    <div class="wrapper">
+
+        <!-- FILTROS -->
+        <aside class="filtros">
+            <span class="titulo_aside">Marcas</span>
+            <form>
+                <label class="option">
+                    <input type="checkbox" name="iphone" value="iphone" />
+                    Iphone
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="samsung" value="samsung" />
+                    Samsung
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="xiaomi" value="xiaomi" />
+                    Xiaomi
+                </label>
+            </form>
+
+            <span class="titulo_aside">Color</span>
+            <form>
+                <label class="option">
+                    <input type="radio" name="color" value="blanco" checked />
+                    Blanco
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="color" value="negro" />
+                    Negro
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="color" value="gris" />
+                    Gris
+                </label>
+            </form>
+
+            <span class="titulo_aside">Precio</span>
+            <form>
+                <select name="Precio">
+                    <option value="199">Menos de 200€</option>
+                    <option value="200-500">Entre 200 y 500€</option>
+                    <option value="501">Más de 500€</option>
+                </select>
+            </form>
+        </aside>
+
+        <!-- MENÚ RÁPIDO (zona superior del grid) -->
+        <div class="menu_rapido_catalogo">
+            <aside>
+                <div class="menu_rapido">
+                    <a href="">
+                        <img src="app/img/iphone-img.webp" />
+                        <p>Modelos Premium</p>
+                    </a>
+
+                    <a href="">
+                        <img src="app/img/Samsung-Galaxy-S25.webp" />
+                        <p>Calidad - Precio</p>
+                    </a>
+
+                    <a href="">
+                        <img src="app/img/sony-xperia-5-v.png" />
+                        <p>Mejor cámara</p>
+                    </a>
+
+                    <a href="">
+                        <img src="app/img/xiaomi.png" />
+                        <p>Menos de 300€</p>
+                    </a>
+
+                    <a href="">
+                        <img src="app/img/icon-mac.png" />
+                        <p>Iphone</p>
+                    </a>
+                </div>
+            </aside>
+        </div>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="contenedor_main">
+            <h1 class="titulo-pagina">Catálogo de Móviles</h1>
+
+            <section class="main">
+                <div class="catalogo">
+
+                    <!-- ARTÍCULO 1 -->
+                    <article>
+                        <div class="articulo">
+                            <header><img src="app/img/iphone-img.webp" /></header>
+                            <p>Iphone 23</p>
+                            <footer>Precio: 800€</footer>
+                        </div>
+                    </article>
+
+                    <!-- ARTÍCULO 2 -->
+                    <article>
+                        <div class="articulo">
+                            <header><img src="app/img/Samsung-Galaxy-S25.webp" /></header>
+                            <p>Samsung Galaxy S25</p>
+                            <footer>Precio: 600€</footer>
+                        </div>
+                    </article>
+
+                    <!-- ARTÍCULO 3 -->
+                    <article>
+                        <div class="articulo">
+                            <header><img src="app/img/sony-xperia-5-v.png" /></header>
+                            <p>Sony Xperia 5 V</p>
+                            <footer>Precio: 400€</footer>
+                        </div>
+                    </article>
+
+                    <!-- ARTÍCULO 4 -->
+                    <article>
+                        <div class="articulo">
+                            <header><img src="app/img/xiaomi.png" /></header>
+                            <p>Xiaomi Redmi Note 8</p>
+                            <footer>Precio: 300€</footer>
+                        </div>
+                    </article>
+
+                    <!-- ARTÍCULO 5 -->
+                    <article>
+                        <div class="articulo">
+                            <header><img src="app/img/iphone-img.webp" /></header>
+                            <p>Iphone 23</p>
+                            <footer>Precio: 800€</footer>
+                        </div>
+                    </article>
+
+                    <!-- ARTÍCULO 6 -->
+                    <article>
+                        <div class="articulo">
+                            <header><img src="app/img/Samsung-Galaxy-S25.webp" /></header>
+                            <p>Samsung Galaxy S25</p>
+                            <footer>Precio: 600€</footer>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+        </main>
+
+    </div> <!-- FIN WRAPPER -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-acerca">
+            <span class="titulo_footer">Acerca de</span>
+            <a href="">Quiénes somos</a>
+            <a href="">Condiciones</a>
+        </div>
+
+        <div class="footer-tiendas">
+            <span class="titulo_footer">Tiendas</span>
+            <a href="">Encuentra tu tienda</a>
+            <a href="">Horarios</a>
+        </div>
+
+        <div class="footer-catalogo">
+            <span class="titulo_footer">Catálogo</span>
+            <a href="">Ofertas</a>
+            <a href="">Nuevos productos</a>
+        </div>
+
+        <div class="footer-ayuda">
+            <span class="titulo_footer">Ayuda</span>
+            <a href="">Contacto</a>
+            <a href="">Preguntas frecuentes</a>
+        </div>
+
+        <div class="footer-copy">
+            © 2025 BenyMovil. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+bloque 2:
+-- crear pagina de carrito
+creamos una template llamada carrito.html
+cargamos carrito.js
+
+2 productos
+nombre
+imagen
+precio
+
+formulario:
+cantidad -- input type number
+boton quitar producto
+
+
+boton vaciar carrito
+boton ir a checkout
+
+
+bloque 3:
+crear un objeto js que va a controlar la vista.
+ se encarga de pintar los productos y de gestionar la interaccion en la vista
+
+ mostrar productos: void
+
+ quitar producto : void
+ actualizar cantidad: void
+ vaciar carrito: void
+
+bloque 4: 
+vamos a crear los eventos y asignarlos a la vistalo primero de todo nos encargamos de llamar a la funcion
+que muestra los productos
+luego creamos los eventos para modificar la cantidad y eliminar producto
+
+bloque 5:
+vamos a desarrollar 3 funcionalidades adicionales para el carrito
+-- mostrar mensaje carrito vacío si no hay productos
+-- bloquear el enlace de checkout si no hay productos
+-- marca un producto como comprar mas tarde
+
+mostramos el mensaje si al cargar productos el array de productos esta vacio
+si es asi tambien podemos bloquear el enlace
+podemos utilizar un checkbox para marcar el producto como desacctivado
+este checkbox trabaja con la propiedad de producto activo

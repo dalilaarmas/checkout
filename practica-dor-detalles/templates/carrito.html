@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="./../app/css/style.css">
+    <link rel="stylesheet" href="./../app/css/single-product.css">
+    <link rel="stylesheet" href="./../app/css/carrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="../app/js/carrito.js"></script>
+</head>
+
+<body class="fondo letra-principal single-product-page">
+    <header class="header">
+        <div class="logo">
+
+            <img src="./../app/img/main-logo.png">
+            <div class="buscar">
+                <input type="submit" value="Buscar">
+                <input class="busqueda" type="search" placeholder="Buscar en la web">
+            </div>
+            <a href="" class="carrito"><img src="./../app/img/logo-carrito.png"></a>
+            <a href="" class="sesion">Iniciar sesión</a>
+        </div>
+    </header>
+    <nav class="barra_navegacion">
+        <a href="">Inicio</a>
+        <a href="">Catálogo</a>
+        <a href="">Tiendas</a>
+        <a href="">Ayuda</a>
+    </nav>
+    <div class="menu_rapido_catalogo">
+        <aside>
+            <div class="menu_rapido">
+                <a href=""><img src="./../app/img/iphone-img.webp">
+                    <p>Modelos Premium</p>
+                </a>
+                <a href=""><img src="./../app/img/Samsung-Galaxy-S25.webp">
+                    <p>Calidad - Precio</p>
+                </a>
+                <a href=""><img src="./../app/img/sony-xperia-5-v.png">
+                    <p>Mejor cámara</p>
+                </a>
+                <a href=""><img src="./../app/img/xiaomi.png">
+                    <p>Menos de 300€</p>
+                </a>
+                <a href=""><img src="./../app/img/icon-mac.png">
+                    <p>Iphone</p>
+                </a>
+            </div>
+        </aside>
+    </div>
+    <main class="contenedor_main">
+
+        <section class="main">
+           <div class="product-container" id="product-container">
+                <!--Aquí se cargan los productos dinámicamente-->
+           </div>
+           <div class="carrito-vacio hidden">
+                <p>No hay productos en la cesta. No se puede avanzar a checkout hasta que haya productos.</p>
+           </div>
+           <div class="enlaces-carrito">
+                <a class="vaciar-carrito" href="">Vaciar carrito</a>
+                <a class="finalizar-compra" href="checkout.html">Ir a finalizar compra</a>
+           </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-acerca">
+            <span class="titulo_footer">Acerca de</span>
+            <a href="">Quiénes somos</a>
+            <a href="">Condiciones</a>
+        </div>
+
+        <div class="footer-tiendas">
+            <span class="titulo_footer">Tiendas</span>
+            <a href="">Encuentra tu tienda</a>
+            <a href="">Horarios</a>
+        </div>
+
+        <div class="footer-catalogo">
+            <span class="titulo_footer">Catálogo</span>
+            <a href="">Ofertas</a>
+            <a href="">Nuevos productos</a>
+        </div>
+
+        <div class="footer-ayuda">
+            <span class="titulo_footer">Ayuda</span>
+            <a href="">Contacto</a>
+            <a href="">Preguntas frecuentes</a>
+        </div>
+
+        <div class="footer-copy">
+            © 2025 BenyMovil. Todos los derechos reservados.
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
